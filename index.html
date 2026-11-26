@@ -10,19 +10,24 @@
 </head>
 
 <body>
-    <header class="flex items-center justify-around p-5 border-b  border-gray-200">
-        <div class="flex flex-col gap-0.5">
+    <header class="flex items-center justify-around p-5 border-b  border-gray-200 max-sm:gap-5">
+        <div class="flex flex-col gap-0.5 ">
             <span class="text-2xl text-[#542044] font-bold text-2xl "><span
                     class="text-[#ed7a26] ">#</span>MTSKTICH</span>
             <p class="text-[#542044] text-sm ">Votre voix. Vos droits. Notre engagement</p>
         </div>
-        <nav class="flex items-center gap-5 text-[#786671] ">
-            <a class="hover:text-[rgb(189,82,158)] active:text-[#8b276f] active:border-b-2 border-amber-500" href="./index.html">Accueil</a>
-            <a class="hover:text-[rgb(189,82,158)] active:text-[#8b276f] active:border-b-2 border-amber-500" href="./public/pages/Mes droits.html">Mes droits</a>
-            <a class="hover:text-[rgb(189,82,158)] active:text-[#8b276f] active:border-b-2 border-amber-500" href="./public/pages/Agir ensemble.html">Agir ensemble</a>
-            <a class="hover:text-[rgb(189,82,158)] active:text-[#8b276f] active:border-b-2 border-amber-500" href="./public/pages/Mon espace.html">Mon espace</a>
+        <nav class="flex items-center gap-5 text-[#786671] max-sm:hidden ">
+            <a class="hover:text-[rgb(189,82,158)] active:text-[#8b276f] active:border-b-2 border-amber-500"
+                href="./index.html">Accueil</a>
+            <a class="hover:text-[rgb(189,82,158)] active:text-[#8b276f] active:border-b-2 border-amber-500"
+                href="./public/pages/Mes droits.html">Mes droits</a>
+            <a class="hover:text-[rgb(189,82,158)] active:text-[#8b276f] active:border-b-2 border-amber-500"
+                href="./public/pages/Agir ensemble.html">Agir ensemble</a>
+            <a class="hover:text-[rgb(189,82,158)] active:text-[#8b276f] active:border-b-2 border-amber-500"
+                href="./public/pages/Mon espace.html">Mon espace</a>
         </nav>
-        <button class="flex items-center gap-1.5 bg-[#f39139] p-3 rounded-md hover:bg-amber-500 hover:shadow-amber-500 shadow-xl/20">
+        <button
+            class="flex items-center gap-1.5 bg-[#f39139] p-3 rounded-md hover:bg-amber-500 hover:shadow-amber-500 shadow-xl/20">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
                 viewBox="0 0 16 16">
                 <path
@@ -30,10 +35,12 @@
             </svg>
             <p>Besoin d’aide ?</p>
         </button>
-        
-
+        <svg aria-label="Menu" xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[#542044] hidden max-sm:block "
+            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+        </svg>
     </header>
-
+   
 
 
 
