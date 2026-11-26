@@ -342,7 +342,15 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-t-1 {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
   .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  .border-b-1 {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
@@ -353,6 +361,9 @@
   .border-b-4 {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 4px;
+  }
+  .border-\[\#e9dde4\] {
+    border-color: #e9dde4;
   }
   .border-amber-500 {
     border-color: var(--color-amber-500);
@@ -377,6 +388,9 @@
   }
   .bg-\[\#\] {
     background-color: #;
+  }
+  .bg-\[\#f8f0f4\] {
+    background-color: #f8f0f4;
   }
   .bg-\[\#f39139\] {
     background-color: #f39139;
@@ -483,6 +497,9 @@
   }
   .text-\[\#8b276f\] {
     color: #8b276f;
+  }
+  .text-\[\#602f51\] {
+    color: #602f51;
   }
   .text-\[\#542044\] {
     color: #542044;
