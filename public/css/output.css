@@ -9,10 +9,13 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-amber-500: oklch(76.9% 0.188 70.08);
+    --color-amber-600: oklch(66.6% 0.179 58.318);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --spacing: 0.25rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
@@ -311,6 +314,9 @@
   .border-\[\#937c8b\] {
     border-color: #937c8b;
   }
+  .border-\[\#\] {
+    border-color: #;
+  }
   .border-\[\#e6c9da\] {
     border-color: #e6c9da;
   }
@@ -332,6 +338,9 @@
   .bg-\[\#f2e6ef\] {
     background-color: #f2e6ef;
   }
+  .bg-\[\#f4e7ee\] {
+    background-color: #f4e7ee;
+  }
   .bg-\[\#f4e7ef\] {
     background-color: #f4e7ef;
   }
@@ -352,6 +361,9 @@
   }
   .bg-\[\#ffead6\] {
     background-color: #ffead6;
+  }
+  .bg-\[\#fffaf5\] {
+    background-color: #fffaf5;
   }
   .bg-\[\#fffcf8\] {
     background-color: #fffcf8;
@@ -401,6 +413,10 @@
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
   }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -443,6 +459,9 @@
   }
   .text-\[\#887681\] {
     color: #887681;
+  }
+  .text-\[\#a05886\] {
+    color: #a05886;
   }
   .text-\[\#b35812\] {
     color: #b35812;
@@ -494,6 +513,9 @@
     }
     .hover\:text-amber-500:hover {
       color: var(--color-amber-500);
+    }
+    .hover\:text-amber-600:hover {
+      color: var(--color-amber-600);
     }
     .hover\:shadow-amber-500:hover {
       --tw-shadow-color: oklch(76.9% 0.188 70.08);
