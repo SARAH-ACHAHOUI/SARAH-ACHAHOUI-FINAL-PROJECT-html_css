@@ -1,0 +1,49 @@
+.parent {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 20px;
+
+}
+
+.LE_CORPS {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 1vh;
+    background-color: #fffdfa;
+    border-radius: 10px;
+    border: 1px #e8dae3 solid;
+    padding: 20px;
+}
+
+.svg {
+    display: flex;
+    gap: 6rem;
+    justify-content: space-between;
+    color: #ba8ab0;
+
+}
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.LE_CORPS h1{
+    color: #542044;
+    font-size: 20px;
+    font-weight: bold;
+}
+.LE_CORPS p{
+    color: #947c89;
+}
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+
