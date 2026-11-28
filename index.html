@@ -10,13 +10,14 @@
 </head>
 
 <body>
-    <header class="flex items-center justify-around p-5 border-b  border-gray-200 max-sm:gap-5">
+    <header class="flex items-center justify-around p-5 border-b relative border-gray-200 max-sm:gap-5">
         <div class="flex flex-col gap-0.5 ">
             <span class="text-2xl text-[#542044] font-bold text-2xl "><span
                     class="text-[#ed7a26] ">#</span>MTSKTICH</span>
             <p class="text-[#542044] text-sm ">Votre voix. Vos droits. Notre engagement</p>
         </div>
-        <nav class="flex items-center gap-5 text-[#786671] max-sm:hidden ">
+        <input class="peer hidden" type="checkbox" name="" id="menu-checked">
+        <nav class="flex items-center gap-5 text-[#786671] max-sm:absolute max-sm:flex-col max-sm:bg-amber-500 max-sm:w-[40%] max-sm:h-[120%] max-sm:gap-2 max-sm:top-18 max-sm:right-full max-sm:peer-checked:right-[18px]">
             <a class="hover:text-[rgb(189,82,158)] active:text-[#8b276f] active:border-b-2 border-amber-500"
                 href="./index.html">Accueil</a>
             <a class="hover:text-[rgb(189,82,158)] active:text-[#8b276f] active:border-b-2 border-amber-500"
@@ -35,10 +36,13 @@
             </svg>
             <p>Besoin d’aide ?</p>
         </button>
-        <svg aria-label="Menu" xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-[#542044] hidden max-sm:block "
-            fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
-        </svg>
+        <label class="cursor-pointer" for="menu-checked">
+            <svg aria-label="Menu" xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10 text-[#542044] max-sm:block hidden " fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+            </svg>
+        </label>
     </header>
     <main>
         <!-- section1 -->
@@ -96,7 +100,8 @@
 
         <!-- section2 9bal mn Derrière -->
         <section>
-            <div class="flex items-center justify-around bg-[#f8f0f4] p-5 border-b-1 border-t-1 border-[#e9dde4]">
+            <div
+                class="flex items-center justify-around bg-[#f8f0f4] p-5 border-b-1 border-t-1 border-[#e9dde4] max-sm:flex-col ">
                 <div class="flex items-center gap-2 ">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#965181" class="bi bi-book"
                         viewBox="0 0 16 16">
@@ -126,19 +131,20 @@
             </div>
         </section>
         <!-- section3 dyal Derrière -->
-        <section class="flex items-center flex-col justify-around p-5 border-b-1 border-[#eadee4] gap-9 ">
+        <section
+            class="flex items-center flex-col justify-around p-5 border-b-1 border-[#eadee4] gap-9 max-sm:flex-col ">
 
             <div class=" flex flex-col p-9 gap-3">
                 <div class="flex items-center gap-2 font-light text-sm font-mono ">
                     <div class="bg-[#fd7e05] w-[10px] h-[10px] rounded-[50%]"></div>
                     <h1 class="text-[#8b276f]"> DERRIÈRE CHAQUE DOSSIER,UNE PERSONNE</h1>
                 </div>
-                <div class="flex items-center justify-between gap-5">
-                    <div class="w-[50%]">
+                <div class="flex items-center justify-between gap-5 max-sm:flex flex-col ">
+                    <div class="w-[50%] max-sm:w-[100%]">
                         <h1 class="text-3xl font-bold text-[#542044]">Le plus difficile ne devrait pas
                             être de connaître la suite.</h1>
                     </div>
-                    <div class="w-[40%]">
+                    <div class="w-[40%] max-sm:w-[100%] ">
                         <p class="text-">Déposer plainte est une démarche importante. Ne pas savoir ce qu’elle devient
                             ne devrait pas être
                             une fatalité.</p>
@@ -147,20 +153,21 @@
             </div>
 
 
-            <div class="flex items-center  gap-3">
-                <div class="flex items-center flex-col gap-1 text-center">
-                    <div class="flex items-center gap-2">
+            <div class="flex items-center gap-3 max-sm:flex-col max-sm:gap-5">
+                <div class="flex items-center flex-col gap-1 text-center max-sm:w-[100%]">
+                    <div class="flex items-center gap-2 ">
                         <div
                             class="bg-[#f2e6ef] text-[#8b276f] p-2 rounded-full hover:text-[#fd7e05] active:text-[#8b276f]">
                             01</div>
                         <h1 class="text-[#542044] font-medium hover:text-[#fd7e05] active:text-[#8b276f]">Le courage de
                             parler</h1>
                     </div>
-                    <p class="text-[#8c7783] w-[50%]">Une femme dépose plainte et espère que sa démarche sera entendue.
+                    <p class="text-[#8c7783] w-[50%] max-sm:w-[90%]">Une femme dépose plainte et espère que sa démarche
+                        sera entendue.
                     </p>
 
                 </div>
-                <div class="flex items-center flex-col gap-1 text-center">
+                <div class="flex items-center flex-col gap-1 text-center max-sm:w-[100%]">
                     <div class="flex items-center gap-2">
                         <div
                             class="bg-[#f2e6ef] text-[#8b276f] p-2 rounded-full hover:text-[#fd7e05] active:text-[#8b276f]">
@@ -168,11 +175,12 @@
                         <h1 class="text-[#542044] font-medium hover:text-[#fd7e05] active:text-[#8b276f]">Le temps de
                             l’attente</h1>
                     </div>
-                    <p class="text-[#8c7783] w-[50%]">Les jours passent. Les informations deviennent difficiles à
+                    <p class="text-[#8c7783] w-[50%] max-sm:w-[90%]">Les jours passent. Les informations deviennent
+                        difficiles à
                         obtenir.
 
                 </div>
-                <div class="flex items-center flex-col gap-1 text-center">
+                <div class="flex items-center flex-col gap-1 text-center max-sm:w-[100%]">
                     <div class="flex items-center gap-2">
                         <div
                             class="bg-[#f2e6ef] text-[#8b276f] p-2 rounded-full hover:text-[#fd7e05] active:text-[#8b276f]">
@@ -180,11 +188,12 @@
                         <h1 class="text-[#542044] font-medium hover:text-[#fd7e05] active:text-[#8b276f]">Le poids du
                             silence</h1>
                     </div>
-                    <p class="text-[#8c7783] w-[50%]">Qui suit le dossier ? Pourquoi ce délai ? Vers qui se tourner ?
+                    <p class="text-[#8c7783] w-[50%] max-sm:w-[90%]">Qui suit le dossier ? Pourquoi ce délai ? Vers qui
+                        se tourner ?
                     </p>
 
                 </div>
-                <div class="flex items-center flex-col gap-1 text-center ">
+                <div class="flex items-center flex-col gap-1 text-center max-sm:w-[100%] ">
                     <div class="flex items-center gap-2">
                         <div
                             class="bg-[#ffead6] text-[#8b276f] p-2 rounded-full hover:text-[#fd7e05] active:text-[#8b276f]">
@@ -192,7 +201,8 @@
                         <h1 class="text-[#b35812] font-medium hover:text-[#fd7e05] active:text-[#8b276f]">Une suite à
                             construire</h1>
                     </div>
-                    <p class="text-[#8c7783] w-[50%]">Comprendre, être orientée et identifier une prochaine étape
+                    <p class="text-[#8c7783] w-[50%] max-sm:w-[90%]">Comprendre, être orientée et identifier une
+                        prochaine étape
                         concrète.
                     </p>
 
@@ -209,8 +219,8 @@
             </div>
         </section>
         <!-- section4 dyal fil -->
-        <section class="bg-[#f6eef3] flex items-center justify-around gap-5 p-9">
-            <div class="flex flex-col gap-5 w-[40%]">
+        <section class="bg-[#f6eef3] flex items-center justify-around gap-5 p-9 max-sm:flex-col">
+            <div class="flex flex-col gap-5 w-[40%] max-sm:w-[100%]">
                 <div class="flex items-center gap-2 font-light text-sm font-mono ">
                     <div class="bg-[#fd7e05] w-[10px] h-[10px] rounded-[50%]"></div>
                     <h1 class="text-[#8b276f]">LE FIL QUI BOUS RELIE </h1>
@@ -324,8 +334,8 @@
             </div>
         </section>
         <!-- section5 dyal MUR -->
-        <section class="flex items-center justify-around gap-5 p-9 ">
-            <div class="flex flex-col gap-5 w-[40%]">
+        <section class="flex items-center justify-around gap-5 p-9  max-sm:flex-col ">
+            <div class="flex flex-col gap-5 w-[40%] max-sm:w-[100%]">
                 <div class="flex items-center gap-2 font-light text-sm font-mono ">
                     <div class="bg-[#fd7e05] w-[10px] h-[10px] rounded-[50%]"></div>
                     <h1 class="text-[#8b276f]">LE MUR DES VOIX </h1>
@@ -349,16 +359,17 @@
 
                 </div>
             </div>
-            <div class="flex items-center w-[40%] shadow-xl ">
+            <div class="flex items-center w-[40%] max-sm:w-[100%] shadow-xl ">
                 <img src="./public/images/image.png" alt="">
             </div>
-            
+
         </section>
         <section class="flex flex-col p-9 gap-9">
             <div class="bg-[#72245d] p-5 flex items-center justify-between gap-5 rounded-2xl">
                 <div class="flex flex-col gap-4 p-5">
                     <h1 class="text-[#fffcf9] text-3xl font-bold ">Comprendre, puis choisir votre prochain pas.</h1>
-                    <p class="text-[#e1bed6]">Vous restez libre de votre rythme et des informations que vous partagez.</p>
+                    <p class="text-[#e1bed6]">Vous restez libre de votre rythme et des informations que vous partagez.
+                    </p>
                 </div>
                 <div>
                     <button
@@ -376,18 +387,18 @@
         </section>
 
     </main>
-    <footer class="bg-[#f5edf1] p-3 justify-items-center gap-5">
-        <div class="flex items-center justify-around p-3 border-b-1 border-[#937c8b]">
+    <footer class="bg-[#f5edf1] p-3 justify-items-center gap-5 ">
+        <div class="flex items-center justify-around p-3 border-b-1 border-[#937c8b] max-sm:flex-col">
             <div class="flex flex-col gap-3">
                 <div class="flex flex-col gap-0.5 ">
                     <span class="text-2xl text-[#542044] font-bold text-2xl "><span
                             class="text-[#ed7a26] ">#</span>MTSKTICH</span>
                     <p class="text-[#542044] text-sm ">Votre voix. Vos droits. Notre engagement</p>
                 </div>
-                <p class="text-[#937c8b] w-[40%]">Pour que chaque voix soit entendue.
+                <p class="text-[#937c8b] w-[40%] max-sm:w-[100%]">Pour que chaque voix soit entendue.
                     Et que chaque démarche ait une suite.</p>
             </div>
-            <div class="flex items-center gap-5">
+            <div class="flex items-center gap-5 max-sm:flex-col">
                 <div class="flex items-center flex-col gap-2">
                     <h1 class="text-[#542044] font-bold hover:text-amber-500 ">EXPLORER</h1>
                     <a class="text-[#967c8e]" href="./public/pages/Agir ensemble.html">Agir ensemble</a>

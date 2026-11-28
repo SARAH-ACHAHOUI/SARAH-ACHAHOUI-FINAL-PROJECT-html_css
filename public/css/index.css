@@ -24,26 +24,44 @@
     color: #ba8ab0;
 
 }
-.top{
+
+.top {
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 3rem;
 }
 
-.LE_CORPS h1{
+.LE_CORPS h1 {
     color: #542044;
     font-size: 20px;
     font-weight: bold;
 }
-.LE_CORPS p{
+
+.LE_CORPS p {
     color: #947c89;
 }
-.bottom{
+
+.bottom {
     display: flex;
     align-items: center;
     justify-content: space-around;
     gap: 3rem;
 }
 
+@media(max-width:450px) {
+    .LE_CORPS {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+    }
+}
